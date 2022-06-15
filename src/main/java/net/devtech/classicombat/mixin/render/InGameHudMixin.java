@@ -16,6 +16,6 @@ public class InGameHudMixin {
 
     @Inject(method = "renderCrosshair", at = @At("HEAD"))
     public void inject_renderCrosshair(CallbackInfo ci) {
-        this.client.options.attackIndicator = AttackIndicator.OFF;
+        this.client.options.getAttackIndicator().setValue(AttackIndicator.OFF);
     }
 }

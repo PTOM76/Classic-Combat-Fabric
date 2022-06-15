@@ -1,9 +1,11 @@
 package net.devtech.classicombat.mixin.regen;
 
 import net.minecraft.entity.player.HungerManager;
-import org.objectweb.asm.Opcodes;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.injection.*;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Constant;
+import org.spongepowered.asm.mixin.injection.ModifyConstant;
+import org.spongepowered.asm.mixin.injection.Slice;
 
 @Mixin(HungerManager.class)
 public class HungerManagerMixin {
